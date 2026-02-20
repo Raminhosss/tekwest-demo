@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-PT" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TekWest - Car Service | Oficina Automóvel em Torres Vedras</title>
+    <meta name="description" content="Manutenção e reparação de veículos ligeiros, pesados e elétricos em Torres Vedras. Oficina com 5.0 Estrelas no Google. Desde 2009.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            // As cores extraídas do logotipo original:
+                            orange: '#F9A826', // O Amarelo/Laranja desportivo da TekWest
+                            black: '#09090b',  // Fundo principal escuro
+                            darkgray: '#4B4B4D',// Cinzento escuro da marca
+                            lightgray: '#A7A9AC'// Cinzento claro da marca
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'], 
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-black antialiased text-white font-sans selection:bg-brand-orange selection:text-brand-black">
+
+    <header class="fixed w-full top-0 z-50 bg-brand-black/95 backdrop-blur-md border-b-[3px] border-brand-orange">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                
+                <div class="flex-shrink-0 flex items-center cursor-pointer">
+                    <a href="#home">
+                        <img src="images/logo.png" alt="TekWest Logo" class="h-12 md:h-14 w-auto object-contain transition-transform duration-300 hover:scale-105" />
+                    </a>
+                </div>
+
+                <nav class="hidden md:flex space-x-8 items-center uppercase font-bold tracking-wider text-sm">
+                    <a href="#home" class="text-white hover:text-brand-orange transition-colors">Início</a>
+                    <a href="#servicos" class="text-zinc-400 hover:text-brand-orange transition-colors">Serviços</a>
+                    <a href="#avaliacoes" class="text-zinc-400 hover:text-brand-orange transition-colors">Avaliações</a>
+                    
+                    <a href="https://wa.me/351919343435?text=Ol%C3%A1%20TekWest,%20gostaria%20de%20marcar%20uma%20revis%C3%A3o%20para%20o%20meu%20carro." target="_blank" rel="noopener noreferrer" class="ml-6 px-6 py-3 text-brand-black font-bold uppercase tracking-wider bg-brand-orange hover:bg-yellow-500 transition-colors shadow-[0_0_15px_rgba(249,168,38,0.4)]">
+                        MARCAR REVISÃO
+                    </a>
+                </nav>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-btn" class="text-brand-orange hover:text-white focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="relative pt-32 pb-20 lg:pt-56 lg:pb-40 overflow-hidden flex items-center min-h-[90vh]">
+        
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=2000&auto=format&fit=crop" alt="Oficina Automóvel" class="w-full h-full object-cover object-center grayscale opacity-60" />
+        </div>
+        
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-black via-brand-black/95 to-transparent z-0"></div>
+        
+        <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-orange/10 rounded-full blur-[120px] pointer-events-none -z-0"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-3xl">
+                
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="flex text-brand-orange">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <span class="font-bold uppercase tracking-widest text-brand-lightgray text-sm border-l-2 border-brand-darkgray pl-4">OFICINA 5 ESTRELAS EM TORRES VEDRAS</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter italic leading-[1.1] mb-6">
+                    A MÁXIMA PERFORMANCE <br />
+                    <span class="text-brand-orange">PARA O SEU MOTOR.</span>
+                </h1>
+                
+                <p class="text-lg md:text-xl text-zinc-300 mb-10 max-w-xl leading-relaxed font-medium">
+                    Serviço especializado de mecânica, diagnóstico eletrónico e venda de peças.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    
+                    <a href="https://wa.me/351919343435" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center gap-3 px-8 py-4 text-sm font-bold uppercase tracking-wider text-black bg-[#25D366] hover:bg-[#1fae52] transition-colors shadow-lg">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/>
+                        </svg>
+                        WHATSAPP
+                    </a>
+                    
+                    <a href="#servicos" class="inline-flex justify-center items-center gap-3 px-8 py-4 text-sm font-bold uppercase tracking-wider text-white bg-transparent border-2 border-brand-darkgray hover:border-brand-orange hover:bg-brand-orange/10 transition-colors">
+                        VER SERVIÇOS
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="servicos" class="py-24 bg-[#111113] border-t border-brand-darkgray/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="mb-16 border-l-4 border-brand-orange pl-6">
+                <h2 class="text-brand-orange font-bold tracking-widest uppercase text-sm mb-2">As Nossas Especialidades</h2>
+                <h3 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tight italic leading-tight">
+                    SERVIÇO COMPLETO.<br>
+                    <span class="text-brand-lightgray">ZERO DESCULPAS.</span>
+                </h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="group bg-[#18181b] p-8 border border-zinc-800 hover:border-brand-orange transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-zinc-800 group-hover:bg-brand-orange transition-colors"></div>
+                    
+                    <div class="w-16 h-16 bg-brand-black flex items-center justify-center mb-6 text-brand-orange border border-zinc-800 group-hover:bg-brand-orange group-hover:text-brand-black transition-colors">
+                        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3 uppercase tracking-wide">Mecânica Geral</h4>
+                    <p class="text-zinc-400 leading-relaxed font-medium">Revisões completas, mudanças de óleo, travões e embraiagens para veículos ligeiros multimarca.</p>
+                </div>
+
+                <div class="group bg-[#18181b] p-8 border border-zinc-800 hover:border-brand-orange transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-zinc-800 group-hover:bg-brand-orange transition-colors"></div>
+                    
+                    <div class="w-16 h-16 bg-brand-black flex items-center justify-center mb-6 text-brand-orange border border-zinc-800 group-hover:bg-brand-orange group-hover:text-brand-black transition-colors">
+                        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" /> <path stroke-linecap="round" stroke-linejoin="round" d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1 .4-1 1v10H2v2h2m15 0h2v-2h-2m-9 0a2 2 0 100-4 2 2 0 000 4zm8 0a2 2 0 100-4 2 2 0 000 4z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3 uppercase tracking-wide">Veículos Pesados</h4>
+                    <p class="text-zinc-400 leading-relaxed font-medium">Diagnóstico e reparação especializados para frotas industriais, comerciais e veículos de grande porte.</p>
+                </div>
+
+                <div class="group bg-[#18181b] p-8 border border-zinc-800 hover:border-brand-orange transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-zinc-800 group-hover:bg-brand-orange transition-colors"></div>
+                    
+                    <div class="w-16 h-16 bg-brand-black flex items-center justify-center mb-6 text-brand-orange border border-zinc-800 group-hover:bg-brand-orange group-hover:text-brand-black transition-colors">
+                        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3 uppercase tracking-wide">Híbridos & Elétricos</h4>
+                    <p class="text-zinc-400 leading-relaxed font-medium">Equipa formada e certificada para manutenção de baterias e sistemas de alta voltagem.</p>
+                </div>
+
+                <div class="group bg-[#18181b] p-8 border border-zinc-800 hover:border-brand-orange transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-zinc-800 group-hover:bg-brand-orange transition-colors"></div>
+                    
+                    <div class="w-16 h-16 bg-brand-black flex items-center justify-center mb-6 text-brand-orange border border-zinc-800 group-hover:bg-brand-orange group-hover:text-brand-black transition-colors">
+                        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3 uppercase tracking-wide">Peças & Acessórios</h4>
+                    <p class="text-zinc-400 leading-relaxed font-medium">Venda ao público e a profissionais de peças originais e equivalentes para todas as marcas.</p>
+                </div>
+
+            </div>
+            
+            <div class="mt-12 bg-gradient-to-r from-brand-orange to-yellow-500 p-8 flex flex-col md:flex-row items-center justify-between shadow-[0_0_30px_rgba(249,168,38,0.15)]">
+                <div class="mb-6 md:mb-0">
+                    <h4 class="text-2xl font-black text-brand-black uppercase italic tracking-tighter">Diagnóstico Eletrónico Avançado</h4>
+                    <p class="text-brand-black/80 font-bold mt-1">Identificamos qualquer anomalia eletrónica no seu veículo em minutos.</p>
+                </div>
+                <a href="https://wa.me/351919343435" target="_blank" class="px-8 py-4 bg-brand-black text-white font-bold uppercase tracking-wider hover:bg-zinc-800 transition-colors flex-shrink-0">
+                    Saber Mais
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <section id="avaliacoes" class="py-24 bg-brand-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="border-l-4 border-brand-orange pl-6">
+                    <h2 class="text-brand-orange font-bold tracking-widest uppercase text-sm mb-2">A Opinião dos Nossos Clientes</h2>
+                    <h3 class="text-3xl md:text-5xl font-black text-white uppercase tracking-tight italic leading-tight">
+                        A PALAVRA DE QUEM <br>
+                        <span class="text-brand-lightgray">CONDUZ CONNOSCO.</span>
+                    </h3>
+                </div>
+                <div class="flex items-center gap-3 bg-zinc-900 border border-zinc-800 px-6 py-3 shadow-lg">
+                    <span class="text-4xl font-black text-white italic">5.0</span>
+                    <div>
+                        <div class="flex text-brand-orange text-sm">
+                            ★★★★★
+                        </div>
+                        <span class="text-xs text-zinc-400 font-bold uppercase tracking-wider">Classificação Google</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-zinc-900 p-8 border-t-2 border-zinc-800 hover:border-brand-orange transition-colors">
+                    <div class="flex text-brand-orange mb-4 text-lg">★★★★★</div>
+                    <p class="text-zinc-300 font-medium leading-relaxed mb-6 italic">
+                        "Excelentes profissionais, o Luis está sempre disponivel para ajudar o cliente. Não confio o meu carro a outra oficina só mesmo na TekWest"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-zinc-800 flex items-center justify-center text-brand-orange font-bold font-sans">
+                            C
+                        </div>
+                        <div>
+                            <p class="text-white font-bold uppercase text-sm">Carla Machado</p>
+                            <p class="text-xs text-zinc-500 font-bold uppercase">Via Google Maps</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-zinc-900 p-8 border-t-2 border-zinc-800 hover:border-brand-orange transition-colors">
+                    <div class="flex text-brand-orange mb-4 text-lg">★★★★★</div>
+                    <p class="text-zinc-300 font-medium leading-relaxed mb-6 italic">
+                        "I was lucky to find Tek West a few years ago and now won’t go anywhere else, even since moving away from the area! They go above and beyond, provide excellent service at very fair and competitive prices.
+I highly recommend Tek West."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-zinc-800 flex items-center justify-center text-brand-orange font-bold font-sans">
+                            S
+                        </div>
+                        <div>
+                            <p class="text-white font-bold uppercase text-sm">Shavaugn</p>
+                            <p class="text-xs text-zinc-500 font-bold uppercase">Via Google Maps</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-zinc-900 p-8 border-t-2 border-zinc-800 hover:border-brand-orange transition-colors">
+                    <div class="flex text-brand-orange mb-4 text-lg">★★★★★</div>
+                    <p class="text-zinc-300 font-medium leading-relaxed mb-6 italic">
+                        "I only have positive things to say; friendly, efficient, generous, always willing to help - top job by Luís and the team - you make car life easier!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-zinc-800 flex items-center justify-center text-brand-orange font-bold font-sans">
+                            L
+                        </div>
+                        <div>
+                            <p class="text-white font-bold uppercase text-sm">Luisa Cecchinato</p>
+                            <p class="text-xs text-zinc-500 font-bold uppercase">Via Google Maps</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contactos" class="bg-[#050505] border-t-4 border-brand-orange pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-12">
+                
+                <div class="lg:col-span-1">
+                    <img src="images/logo.png" alt="TekWest Logo" class="h-12 w-auto object-contain mb-6 grayscale brightness-200" />
+                    <p class="text-zinc-400 text-sm font-medium leading-relaxed mb-8">
+                        Manutenção e reparação multimarca de veículos ligeiros, pesados e elétricos. Excelência automóvel desde 2009.
+                    </p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-zinc-300 font-bold text-sm uppercase tracking-wider">
+                            <svg class="w-5 h-5 text-brand-orange mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                            <a href="tel:+351919343435" class="hover:text-white transition-colors">919 343 435</a>
+                        </li>
+                        <li class="flex items-center text-zinc-300 font-bold text-sm uppercase tracking-wider">
+                            <svg class="w-5 h-5 text-brand-orange mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                            R. Fernando Vicente 4, <br> 2560-677 Torres Vedras
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-2 border-2 border-zinc-800 p-1 bg-zinc-900 relative group overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-brand-orange text-black font-bold uppercase text-[10px] tracking-widest px-3 py-1 z-10 pointer-events-none">
+                        Navegar para a Oficina
+                    </div>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.496292435559!2d-9.254446124240896!3d39.09516977168248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1f2da431e77189%3A0xfd3c4182d4f83758!2sTekWest%20-%20Car%20Service%2C%20Lda.!5e0!3m2!1spt-PT!2spt!4v1771599603653!5m2!1spt-PT!2spt" 
+                        width="100%" 
+                        height="250" 
+                        style="border:0; filter: grayscale(80%) contrast(1.2);" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="group-hover:filter-none transition-all duration-500 w-full">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="border-t border-zinc-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-zinc-600 font-bold uppercase tracking-widest text-[10px]">
+                    © <span id="ano-atual"></span> TekWest - Car Service Lda. NIF: 509 155 626.
+                </p>
+                <p class="text-zinc-500 text-xs font-bold uppercase tracking-widest">
+                    POWERED BY 
+                    <a href="#" class="text-brand-orange hover:text-white transition-colors ml-1">OESTELAB</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="mobile-menu" class="hidden fixed top-24 left-0 w-full bg-brand-black border-b border-zinc-800 flex-col py-4 px-6 shadow-2xl md:hidden z-40">
+        <a href="#home" class="py-4 text-sm font-bold uppercase tracking-wider text-white hover:text-brand-orange border-b border-zinc-900">Início</a>
+        <a href="#servicos" class="py-4 text-sm font-bold uppercase tracking-wider text-zinc-400 hover:text-white border-b border-zinc-900">Serviços</a>
+        <a href="#avaliacoes" class="py-4 text-sm font-bold uppercase tracking-wider text-zinc-400 hover:text-white border-b border-zinc-900">Opiniões</a>
+        <a href="tel:+351919343435" class="mt-6 py-4 text-center text-sm font-bold uppercase tracking-wider text-brand-black bg-brand-orange">Ligar à Oficina</a>
+    </div>
+
+    <script>
+        // Lógica simples para abrir/fechar o menu mobile
+        const btn = document.getElementById('mobile-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        });
+
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+            });
+        });
+        document.getElementById('ano-atual').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
